@@ -1,14 +1,14 @@
 window.onload = function LoadLocation() {
     //load the dropdown list with location data
     const statesList = document.getElementById("statesList");
-    let length = locationArray.length;
+    let length = locationsArray.length;
 
     for (let i = 0; i < length; i++) {
     //create the option element
     let theOption = document.createElement("option");
     //set the text and value of the option you created
     theOption.textContent = locationsArray[i];
-    theOption.value = locationArray[i];
+    theOption.value = locationsArray[i];
     //append the option as a child of (inside) the
     //select element
     statesList.appendChild(theOption); //adding to the dropdown
@@ -47,8 +47,20 @@ function LoadDataOfAdropdown(myArralist, myDropDown) {
 }
 
 //invoke the function
-function LoadDataOfAdropdown(parklist, statesList);
-function LoadDataOfAdropdown(statesList);
+function runSearch()
+{
+    //Select the selected value from the mountains list
+    const  statesList = document.getElementById("statesList");
+    const selectedStates = statesList.value;
+}
+
+{
+    //Select the selected value from the mountains list
+    const  parkList = document.getElementById("parkList");
+    const selectedparks = parkList.value;
+}
+//function LoadDataOfAdropdown(parklist, statesList);
+//function LoadDataOfAdropdown(statesList);
 
 
 
