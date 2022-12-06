@@ -1,0 +1,28 @@
+.myfooter {
+    text-align: right;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+.fa-facebook {
+    color: blue;
+}
+
+.fa-twitter {
+    color: lightskyblue;
+}
+
+.selectList {
+    
+}
+
+.backgroundImage {
+    background-image: url("/images/leo-serrat_unsplash-1-1600x900.jpg.webp");
+}
+
+.container {
+    display: flex;
+  justify-content: center;
+}

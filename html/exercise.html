@@ -13,21 +13,64 @@
   
   
     <!-- custom CSS -->
-<link rel="stylesheet" href="exercise.css">
+<link rel="stylesheet" href="/css/style.css">
 
  <!-- Font awesome icons -->
  <i class="fa-brands fa-youtube"></i>
 </head>
 
-<body>
+<body class="backgroundImage">
   <header>
     <!-- place navbar here -->
+  <nav>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+        <a class="navbar-brand" href="#">Exploring Outdoors</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="http://127.0.0.1:5500/html/exercise.html#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5500/html/nationalparks.html">National Park</a>
+            </li>
+            
+              <a class="nav-link dropdown-toggle" href="http://127.0.0.1:5500/html/mountainsinfo.html"   aria-haspopup="true" aria-expanded="false">Mountains</a>
+              
+              </div>
+            </li>
+          </ul>
+          <form class="d-flex my-2 my-lg-0">
+            <input class="form-control me-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+
+  </nav>
   </header>
   <main>
-    <i class="fa-brands fa-youtube"></i>
+    <div class="container">
+      <select id="statesList"></select>
+      <button onclick="LocationDropDown()">Search State</button>
+      <select id="parksType"></select>
+      <button onclick="ParksDropDown()">Search Park</button>
+    </div>
+
   </main>
   <footer>
     <!-- place footer here -->
+    <div class="myfooter">
+      <a class="mynav" href="#" aria-current="page"><i class="fa-brands fa-youtube"></i>YouTube</a>
+      <a class="mynav" href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+      <a class="mynav" href="#"><i class="fa-brands fa-twitter"></i>Twitter</a>
+  </div>
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -38,7 +81,11 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
  <!-- custom js -->
-<script src="exercise.js"></script>
+<script src="/script/app.js"></script>
+<script src="/script/locationData.js"></script>
+<script src="/script/mountainData.js"></script>
+<script src="/script/nationalParkData.js"></script>
+<script src="/script/parkTypeData.js"></script>
 
 </body>
 
