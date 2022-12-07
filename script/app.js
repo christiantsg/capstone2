@@ -59,6 +59,8 @@ function runSearch()
     const  parkList = document.getElementById("parkList");
     const selectedparks = parkList.value;
 }
+
+
 //function LoadDataOfAdropdown(parklist, statesList);
 //function LoadDataOfAdropdown(statesList);
 

@@ -1,5 +1,5 @@
 window.onload = function LoadData() {
-    //load the dropdown list with location data
+    //load the dropdown list with mountain data
     initMountainsDropdown();
     document.getElementById("searchButton").addEventListener("click", runSearch);
 };

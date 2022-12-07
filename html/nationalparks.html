@@ -33,7 +33,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav me-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="http://127.0.0.1:5500/html/exercise.html#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+              <a class="nav-link active" href="http://127.0.0.1:5500/html/homepage.html" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="http://127.0.0.1:5500/html/nationalparks.html">National Park</a>
@@ -57,11 +57,16 @@
   </header>
   <main>
     <div class="container">
-      <select id="statesList"></select>
-      <button onclick="LocationDropDown()">Search State</button>
-      <select id="parkList"></select>
-      <button onclick="ParksDropDown()">Search Park</button>
-    </div>
+      <!-- LOCATIONS DROPDOWN -->
+      <select id="statesList" onchange="nationalParksDropDown()">
+      </select>
+      <!-- PARKS TYPE DROPDOWN -->
+      <select id="parkList">
+      </select><br>
+      <!-- NATIONAL PARKS DROPDOWN -->
+      <select id="nationalParksList">
+      </select>
+  </div>
 
   </main>
   <footer>
@@ -85,7 +90,11 @@
 <script src="/script/mountainData.js"></script>
 <script src="/script/nationalParkData.js"></script>
 <script src="/script/parkTypeData.js"></script>
+<script src="/script/typeList.js"></script>
+<script src="/parkDropDown.js"></script>
+<script src="/filtercard.js"></script>
 <script src="/script/app.js"></script>
+
 
 </body>
 
