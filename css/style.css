@@ -14,15 +14,19 @@
     color: lightskyblue;
 }
 
-.selectList {
-    
-}
-
 .backgroundImage {
     background-image: url("/images/leo-serrat_unsplash-1-1600x900.jpg.webp");
 }
 
 .container {
-    display: flex;
-  justify-content: center;
+    text-align: center;
+}
+.cardsContainer {
+width: 1000px; 
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
 }

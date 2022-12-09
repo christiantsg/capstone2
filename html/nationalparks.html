@@ -15,6 +15,7 @@
     <!-- custom CSS -->
 <link rel="stylesheet" href="/css/style.css">
 
+
  <!-- Font awesome icons -->
  <i class="fa-brands fa-youtube"></i>
 </head>
@@ -33,20 +34,18 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav me-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="http://127.0.0.1:5500/html/homepage.html" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+              <a class="nav-link active" href="http://127.0.0.1:5500/homepage.html" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="http://127.0.0.1:5500/html/nationalparks.html">National Park</a>
             </li>
             
-              <a class="nav-link dropdown-toggle" href="http://127.0.0.1:5500/html/mountainsinfo.html"   aria-haspopup="true" aria-expanded="false">Mountains</a>
+              <a class="nav-link dropdown-toggle" href="http://127.0.0.1:5500/html/mountainpage2.html"   aria-haspopup="true" aria-expanded="false">Mountains</a>
               
               </div>
             </li>
           </ul>
-          <form class="d-flex my-2 my-lg-0">
-            <input class="form-control me-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          
           </form>
         </div>
       </div>
@@ -57,17 +56,31 @@
   </header>
   <main>
     <div class="container">
-      <!-- LOCATIONS DROPDOWN -->
-      <select id="statesList" onchange="nationalParksDropDown()">
+      <!-- dropdown for locations -->
+      <select id="locationList" onchange="nationalParksDropDown()">
       </select>
-      <!-- PARKS TYPE DROPDOWN -->
-      <select id="parkList">
+      <!-- dropdown for parks -->
+      <select id="parksTypeList">
       </select><br>
-      <!-- NATIONAL PARKS DROPDOWN -->
+      <!-- dropdown for nationalparks -->
       <select id="nationalParksList">
       </select>
-  </div>
-
+      <!--Images for the cards -->
+      <main id="cardsContainer" class="cardsContainer">
+      <div id="cardsContainer" class="card">
+         <div class=“imageGroup”>
+	        <img src=“/images/Adams-StoryImage_2.jpg”>
+          <p>describe image above</p>
+          </div>
+        <!-- card section-->
+          <div class="card-body"></div>
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </main>
   </main>
   <footer>
     <!-- place footer here -->
@@ -93,7 +106,7 @@
 <script src="/script/typeList.js"></script>
 <script src="/parkDropDown.js"></script>
 <script src="/filtercard.js"></script>
-<script src="/script/app.js"></script>
+
 
 
 </body>
