@@ -1,0 +1,16 @@
+.backgroundImage {
+    background-image: url("/images/yellowstone-national-park-1589616_1920.jpg");
+}
+
+.container {
+    text-align: center;
+}
+.cardsContainer {
+width: 1000px; 
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+}

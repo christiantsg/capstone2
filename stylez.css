@@ -118,8 +118,8 @@ ul {
     z-index: 98;
 }
 
-body{ 
-  background-color: white;
+.backgroundImage {
+  background-image: url("/images/istockphoto-155288168-612x612.jpg");
 }
 
 #myBtn {

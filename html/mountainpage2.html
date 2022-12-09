@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/stylez.css">
 
 </head>
-
+<!-- Nav section with links-->
 <body>
     <header>
         <nav>
@@ -19,13 +19,13 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                   <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                      <a class="nav-link active" href="http://127.0.0.1:5500/homepage.html" aria-current="page">Home<span class="visually-hidden"></span></a>
+                      <a class="nav-link active" href="http://127.0.0.1:5500/html/homepage.html" aria-current="page">Home<span class="visually-hidden"></span></a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="http://127.0.0.1:5500/html/nationalparks.html">National Park</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://127.0.0.1:5500/html/nationalparks.html">Mountains</a>
+                        <a class="nav-link" href="http://127.0.0.1:5500/html/mountainpage2.html">Mountains</a>
                       </li>
                     
                       <a class="nav-link dropdown-toggle" href="http://127.0.0.1:5500/html/mountainpage2.html"   aria-haspopup="true" aria-expanded="false"></a>
@@ -47,13 +47,13 @@
     
 
 
-
+<!-- Calling the list mountains and dropdown -->
     <form id="myForm">
         <select id="selectMountain" onchange="listMountain()">
           <option>Choose a mountain</option>  
         </select>
       </form>
-
+<!-- images to show for 48 mountains-->
 <div class="mountain">
     <img class="mountain-photo" src="/images/Adams-StoryImage_2.jpg">
     <h2 class="mountain-name">Mt. Adams <span class="species">(5799 feet)</span></h2>
@@ -74,7 +74,7 @@
 
 
 
-        <div id=""></div>
+        <div id="images"></div>
         
 
        
@@ -89,9 +89,10 @@
     </main>
     <footer>
     </footer>
+    <!-- custom js-->
+    
     <script src="/script/mountainData.js"></script>
-    <script src="/petsData.js"></script>
-    <script src="/mountain2.js"></script>
+    <script src="/mountain.js"></script>
     
     
     
