@@ -22,7 +22,7 @@ function mountainTemplate(mountain) {
    document.getElementById("mountains").innerHTML = `
      <h1 class="app-title"> ${mountainsArray.length} Mountains to climb</h1>
      ${mountainsArray.map(mountainTemplate).join("")}
-     <p class="footer">These ${mountainsArray.length} mountants were added recently. Check back soon for updates.</p>
+     <p class="footer">These ${mountainsArray.length} Mountains were added recently. Check back soon for updates.</p>
    `;  
    
    async function getSunsetForMountain(lat, lng){
@@ -84,7 +84,7 @@ function mountainTemplate(mountain) {
      }
    }
    
-   // When the user clicks on the button, scroll to the top of the document
+   // a function it takes the user to the top of the page
    function topFunction() {
      document.body.scrollTop = 0; // For Safari
      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
