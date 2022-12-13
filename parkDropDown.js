@@ -1,5 +1,5 @@
 window.onload = function () {
-    // load the dropdown list
+    // load the dropdown list for three
     locationDisplayDropDown();
     parksTypeDropDown();
     nationalParksDropDown();

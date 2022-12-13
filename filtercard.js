@@ -7,7 +7,7 @@ function renderParksCards(parks) {
     let length = parks.length;
     for (let i = 0; i < length; i++) {
     let park = parks[i]
-  //card to include images, description, and to display etc
+  //card to include images, description, and to display in web etc
         const cardTemplate = `<div class="card" style="width: 18rem;">
         <img class="card-img-top" src="/images/Adams-StoryImage_2.jpg"> 
         <div class="card-body">
