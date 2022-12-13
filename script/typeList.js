@@ -20,7 +20,6 @@ window.onload = function LoadParkData() {
     }
 } 
 
-
 //invoke the function
 function runSearch()
 {
